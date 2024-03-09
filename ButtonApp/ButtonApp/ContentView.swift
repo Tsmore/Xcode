@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  QuizApp
+//  ButtonApp
 //
 //  Created by Tomonori Sampei on 2024/03/09.
 //
