@@ -11,6 +11,7 @@
 		E5302CCA2B9F2B7A0034FC13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5302CC92B9F2B7A0034FC13 /* ContentView.swift */; };
 		E5302CCC2B9F2B7C0034FC13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5302CCB2B9F2B7C0034FC13 /* Assets.xcassets */; };
 		E5302CCF2B9F2B7C0034FC13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5302CCE2B9F2B7C0034FC13 /* Preview Assets.xcassets */; };
+		E5302CD62B9F2DEB0034FC13 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5302CD52B9F2DEB0034FC13 /* SoundPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E5302CC92B9F2B7A0034FC13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E5302CCB2B9F2B7C0034FC13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5302CCE2B9F2B7C0034FC13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5302CD52B9F2DEB0034FC13 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 				E5302CC72B9F2B7A0034FC13 /* MusicAppApp.swift */,
 				E5302CC92B9F2B7A0034FC13 /* ContentView.swift */,
 				E5302CCB2B9F2B7C0034FC13 /* Assets.xcassets */,
+				E5302CD52B9F2DEB0034FC13 /* SoundPlayer.swift */,
 				E5302CCD2B9F2B7C0034FC13 /* Preview Content */,
 			);
 			path = MusicApp;
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5302CCA2B9F2B7A0034FC13 /* ContentView.swift in Sources */,
+				E5302CD62B9F2DEB0034FC13 /* SoundPlayer.swift in Sources */,
 				E5302CC82B9F2B7A0034FC13 /* MusicAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
