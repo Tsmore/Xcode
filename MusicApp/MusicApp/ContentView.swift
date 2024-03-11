@@ -13,12 +13,9 @@ struct ContentView: View {
         ZStack {
             //背景画像
             Image(.background)
-                //リサイズ
-                .resizable()
-                //セーフエリア外まで表示
-                .ignoresSafeArea()
-                //アスペクト比を維持
-                .scaledToFill()
+                //背景を表示するためにレイアウトを整える
+                //作成したモディファイアを呼び出す
+                .backgroundModifier()
             HStack {
                 //シンバル
                 Button {
