@@ -8,19 +8,40 @@
 import SwiftUI
 import MapKit
 
+//画面で選択したマップの種類を示す列挙型
+enum Maptype {
+    case standard   //標準
+    case satellite  //衛星写真
+    case hybrid     //衛星写真＋交通機関ラベル
+}
+
 struct MapView: View {
     //検索キーワード
     let searchKey: String
+    //マップ種類
+    let mapType: Maptype
     //キーワードから取得した緯度経度？
     @State var targetCoordinate = CLLocationCoordinate2D()
     //表示するマップの位置
     @State var cameraPosition: MapCameraPosition = .automatic
+    //表示するマップのスタイル
+    var mapStyle: MapStyle {
+        switch mapType {
+        case .standard:
+            return MapStyle.standard()
+        case .satellite:
+            return MapStyle.imagery()
+        case .hybrid:
+            return MapStyle.hybrid()
+        }
+    }
     var body: some View {
         //マップを表示
         Map(position: $cameraPosition) {
             //マップにピンを表示
             Marker(searchKey, coordinate: targetCoordinate)
         }
+        .mapStyle(mapStyle)
         //検索キーワードの変更を検知
         .onChange(of: searchKey, initial: true) { oldValue, newValue in
             //入力された検索キーワードをデバッグエリアに表示
@@ -55,5 +76,5 @@ struct MapView: View {
 }
 
 #Preview {
-    MapView(searchKey: "東京駅")
+    MapView(searchKey: "東京駅", mapType: .standard)
 }
