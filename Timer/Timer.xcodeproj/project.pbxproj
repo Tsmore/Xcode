@@ -11,6 +11,7 @@
 		E5302D042BA48ED90034FC13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5302D032BA48ED90034FC13 /* ContentView.swift */; };
 		E5302D062BA48EDB0034FC13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5302D052BA48EDB0034FC13 /* Assets.xcassets */; };
 		E5302D092BA48EDB0034FC13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5302D082BA48EDB0034FC13 /* Preview Assets.xcassets */; };
+		E5302D102BA48F230034FC13 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5302D0F2BA48F230034FC13 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E5302D032BA48ED90034FC13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E5302D052BA48EDB0034FC13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5302D082BA48EDB0034FC13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5302D0F2BA48F230034FC13 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				E5302D012BA48ED90034FC13 /* TimerApp.swift */,
 				E5302D032BA48ED90034FC13 /* ContentView.swift */,
+				E5302D0F2BA48F230034FC13 /* SettingView.swift */,
 				E5302D052BA48EDB0034FC13 /* Assets.xcassets */,
 				E5302D072BA48EDB0034FC13 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5302D102BA48F230034FC13 /* SettingView.swift in Sources */,
 				E5302D042BA48ED90034FC13 /* ContentView.swift in Sources */,
 				E5302D022BA48ED90034FC13 /* TimerApp.swift in Sources */,
 			);
