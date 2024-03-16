@@ -11,6 +11,7 @@
 		E53595202BA60F66004C120B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535951F2BA60F66004C120B /* ContentView.swift */; };
 		E53595222BA60F68004C120B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53595212BA60F68004C120B /* Assets.xcassets */; };
 		E53595252BA60F68004C120B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53595242BA60F68004C120B /* Preview Assets.xcassets */; };
+		E535952C2BA60FDC004C120B /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535952B2BA60FDC004C120B /* ImagePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E535951F2BA60F66004C120B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E53595212BA60F68004C120B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E53595242BA60F68004C120B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E535952B2BA60FDC004C120B /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				E535951D2BA60F66004C120B /* CameraApp.swift */,
 				E535951F2BA60F66004C120B /* ContentView.swift */,
+				E535952B2BA60FDC004C120B /* ImagePickerView.swift */,
 				E53595212BA60F68004C120B /* Assets.xcassets */,
 				E53595232BA60F68004C120B /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E53595202BA60F66004C120B /* ContentView.swift in Sources */,
+				E535952C2BA60FDC004C120B /* ImagePickerView.swift in Sources */,
 				E535951E2BA60F66004C120B /* CameraApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
