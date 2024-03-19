@@ -17,7 +17,7 @@ struct ImagePickerView: UIViewControllerRepresentable {
         // ImagePickerView型の定数を用意
         let parent: ImagePickerView
         // イニシャライザ
-        init(_parent: ImagePickerView) {
+        init(_ parent: ImagePickerView) {
             self.parent = parent
         }
         // 撮影が終わったときに呼ばれるdelegateメソッド、必ず必要
