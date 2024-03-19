@@ -76,7 +76,7 @@ struct ContentView: View {
                         // 背景を青色に指定
                         .background(Color.blue)
                         // 文字色を白色に指定
-                        .foregroundStyle(Color.blue)
+                        .foregroundStyle(Color.white)
                         // 上下左右に余白を追加
                         .padding()
                 }
