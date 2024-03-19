@@ -61,6 +61,26 @@ struct ContentView: View {
                 // UIImagePickerController（写真撮影）を表示
                 ImagePickerView(isShowSheet: $isShowSheet, captureImage: $captureImage)
             }
+            // captureImageをアンラップする
+            if let captureImage {
+                // captureImageから共有する画像を生成する
+                let shareImage = Image(uiImage: captureImage)
+                // 共有シート
+                ShareLink(item: shareImage, subject: nil, message: nil, preview: SharePreview("Photo", image: shareImage)) {
+                    // テキスト表示
+                    Text("SNSに投稿する")
+                        // 横幅いっぱい
+                        .frame(maxWidth: .infinity)
+                        // 高さ50ポイント指定
+                        .frame(height: 50)
+                        // 背景を青色に指定
+                        .background(Color.blue)
+                        // 文字色を白色に指定
+                        .foregroundStyle(Color.blue)
+                        // 上下左右に余白を追加
+                        .padding()
+                }
+            }
         }
     }
 }
