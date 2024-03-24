@@ -13,6 +13,7 @@
 		E53595252BA60F68004C120B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53595242BA60F68004C120B /* Preview Assets.xcassets */; };
 		E535952C2BA60FDC004C120B /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535952B2BA60FDC004C120B /* ImagePickerView.swift */; };
 		E535952E2BAEF48B004C120B /* EffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535952D2BAEF48B004C120B /* EffectView.swift */; };
+		E53595302BB05E41004C120B /* UIImageExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535952F2BB05E41004C120B /* UIImageExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		E53595242BA60F68004C120B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E535952B2BA60FDC004C120B /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		E535952D2BAEF48B004C120B /* EffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectView.swift; sourceTree = "<group>"; };
+		E535952F2BB05E41004C120B /* UIImageExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				E535951F2BA60F66004C120B /* ContentView.swift */,
 				E535952B2BA60FDC004C120B /* ImagePickerView.swift */,
 				E53595212BA60F68004C120B /* Assets.xcassets */,
+				E535952F2BB05E41004C120B /* UIImageExtention.swift */,
 				E53595232BA60F68004C120B /* Preview Content */,
 			);
 			path = Camera;
@@ -146,6 +149,7 @@
 				E53595202BA60F66004C120B /* ContentView.swift in Sources */,
 				E535952C2BA60FDC004C120B /* ImagePickerView.swift in Sources */,
 				E535951E2BA60F66004C120B /* CameraApp.swift in Sources */,
+				E53595302BB05E41004C120B /* UIImageExtention.swift in Sources */,
 				E535952E2BAEF48B004C120B /* EffectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

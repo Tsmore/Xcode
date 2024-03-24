@@ -22,12 +22,13 @@ struct ImagePickerView: UIViewControllerRepresentable {
         }
         // 撮影が終わったときに呼ばれるdelegateメソッド、必ず必要
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-            // 撮影した写真をcaptureImageに保存
-            if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-                parent.captureImage = originalImage
+            // UIImagePickerControllerを閉じる、isShowSheetがfalseになる
+            picker.dismiss(animated: true) {
+                // 撮影した写真をcaptureImageに保存
+                if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+                    self.parent.captureImage = originalImage
+                }
             }
-            // sheetを閉じる
-            parent.isShowSheet.toggle()
         }
     }
     // Coordinatorを生成、SwiftUIによって自動的に呼び出し
