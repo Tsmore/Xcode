@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    // OkashiDataを参照する変数
+    var okashiDataList = OkashiData()
+    // 入力された文字列を保持する状態変数
+    @State var inputText = ""
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        // 文字を受け取るTextFieldを表示する
+        TextField("キーワード",
+                  text: $inputText,
+                  prompt: Text("キーワードを入力してください"))
+        .onSubmit {
+            // 入力完了直後に検索をする
+            okashiDataList.searchOkashi(keyword: inputText)
         }
-        .padding()
     }
 }
 
