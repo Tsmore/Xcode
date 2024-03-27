@@ -22,6 +22,35 @@ struct ContentView: View {
             // 入力完了直後に検索をする
             okashiDataList.searchOkashi(keyword: inputText)
         }
+        // キーボードの改行を検索に変更する
+        .submitLabel(.search)
+        // 上下左右に空白を空ける
+        .padding()
+        
+        // リスト表示する
+        List(okashiDataList.okashiList) { okashi in
+            // 1つ1つの要素を取り出す
+            // Listの表示内容を生成する
+            // 水平にレイアウト（横方向にレイアウト）
+            HStack {
+                // 画像を読み込み、表示する
+                AsyncImage(url: okashi.image) { image in
+                    // 画像を表示する
+                    image
+                    // リサイズする
+                        .resizable()
+                    // アスペクト比（縦横比）を維持してエリア内に収まるようにする
+                        .scaledToFit()
+                    // 高さ40
+                        .frame(height: 40)
+                } placeholder: {
+                    // 読み込み中はインジケーターを表示する
+                    ProgressView()
+                }
+                // テキスト表示する
+                Text(okashi.name)
+            }
+        }
     }
 }
 
