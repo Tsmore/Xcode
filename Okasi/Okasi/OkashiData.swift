@@ -33,6 +33,8 @@ struct OkashiItem: Identifiable {
     }
     // お菓子のリスト（Identifiableプロトコル）
     var okashiList: [OkashiItem] = []
+    // クリックされたWebページのURL情報
+    var okashiLink: URL?
     // Web API検索用メソッド　第一引数：keyword　検索したいワード
     func searchOkashi(keyword: String) {
         // デバッグエリアに出力

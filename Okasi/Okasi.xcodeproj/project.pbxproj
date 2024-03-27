@@ -12,6 +12,7 @@
 		E53595422BB1AC4D004C120B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53595412BB1AC4D004C120B /* Assets.xcassets */; };
 		E53595452BB1AC4D004C120B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53595442BB1AC4D004C120B /* Preview Assets.xcassets */; };
 		E535954C2BB2CEB6004C120B /* OkashiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535954B2BB2CEB6004C120B /* OkashiData.swift */; };
+		E535954E2BB4535F004C120B /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535954D2BB4535F004C120B /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E53595412BB1AC4D004C120B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E53595442BB1AC4D004C120B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E535954B2BB2CEB6004C120B /* OkashiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkashiData.swift; sourceTree = "<group>"; };
+		E535954D2BB4535F004C120B /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				E535953D2BB1AC4B004C120B /* OkasiApp.swift */,
 				E535953F2BB1AC4B004C120B /* ContentView.swift */,
+				E535954D2BB4535F004C120B /* SafariView.swift */,
 				E535954B2BB2CEB6004C120B /* OkashiData.swift */,
 				E53595412BB1AC4D004C120B /* Assets.xcassets */,
 				E53595432BB1AC4D004C120B /* Preview Content */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E535954E2BB4535F004C120B /* SafariView.swift in Sources */,
 				E53595402BB1AC4B004C120B /* ContentView.swift in Sources */,
 				E535954C2BB2CEB6004C120B /* OkashiData.swift in Sources */,
 				E535953E2BB1AC4B004C120B /* OkasiApp.swift in Sources */,
